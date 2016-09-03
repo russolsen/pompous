@@ -1,0 +1,6 @@
+       load_name      "print"
+       LOAD_CONST     "Hello World!"
+       CALL_FUNCTION   1
+       POP_TOP
+       LOAD_CONST None
+       RETURN_VALUE

@@ -1,0 +1,14 @@
+#             0 LOAD_GLOBAL              0 (print)
+#              3 LOAD_CONST               1 ('it is')
+#              6 LOAD_FAST                0 (aaaaa)
+#              9 CALL_FUNCTION            2 (2 positional, 0 keyword pair)
+#             12 POP_TOP
+#             13 LOAD_CONST               0 (None)
+#             16 RETURN_VALUE
+#
+      load_global "print"
+      load_const  "it is"
+      load_const  444
+      call_function 2
+      load_const 666
+      return_value

@@ -1,0 +1,14 @@
+             # test = False
+
+             load_const False
+             STORE_GLOBAL 'test'
+
+             load_name 'print'
+             load_name 'test'
+             POP_JUMP_IF_FALSE :label_else
+             load_const 'yes'
+             JUMP_FORWARD :label_print
+label_else:  load_const 'no'
+label_print: CALL_FUNCTION 1
+             load_const None
+             RETURN_VALUE

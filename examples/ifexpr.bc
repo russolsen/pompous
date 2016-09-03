@@ -1,0 +1,6 @@
+       load_const          True
+       pop_jump_if_false   :lab01
+       load_const          'yes'
+       jump_forward        :lab02
+lab01: load_const          'no'
+lab02: return_value

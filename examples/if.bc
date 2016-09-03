@@ -1,0 +1,12 @@
+        load_fast 'a'
+              3 POP_JUMP_IF_FALSE       13
+
+  3           6 LOAD_FAST                1 (b)
+              9 POP_TOP
+             10 JUMP_FORWARD             4 (to 17)
+
+  5     >>   13 LOAD_FAST                2 (c)
+             16 POP_TOP
+        >>   17 LOAD_CONST               0 (None)
+             20 RETURN_VALUE
+

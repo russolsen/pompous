@@ -1,0 +1,15 @@
+# Loop thru (1,2,3)
+
+              SETUP_LOOP    :loop_exit
+              LOAD_CONST    (1, 2, 3)
+              GET_ITER
+loop_start:   FOR_ITER      :loop_done
+              STORE_NAME    'x'
+              LOAD_NAME     'print'
+              LOAD_NAME     'x'
+              CALL_FUNCTION 1
+              POP_TOP
+              JUMP_ABSOLUTE :loop_start
+loop_done:    POP_BLOCK
+loop_exit:    LOAD_CONST    None
+              RETURN_VALUE
